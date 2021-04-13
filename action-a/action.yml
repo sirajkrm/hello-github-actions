@@ -1,0 +1,17 @@
+name: "Hello Actions"
+description: "Greet that guy"
+author: "octocat@github.com"
+
+inputs:
+  MY_NAME:
+    description: "the greeting itself"
+    required: true
+    default: "Creometry!"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+branding:
+  icon: "mic"
+  color: "orange"
